@@ -1,0 +1,70 @@
+body{
+	height: 100vh;
+	color: white;
+	font-family: Bahnschrift;
+	background: linear-gradient(to bottom right, #000b78, #1227ff);
+}
+.lb{
+	background: black;
+	border: solid;
+	border-color: black;
+	color: white;
+	padding: 7px;
+	font-size: 19px;
+	border-radius: 10px;
+}
+.lb:hover{
+	border-color: black;
+	border: solid;
+	color: black;
+	background: white;
+}
+#ans{
+	width: 100%;
+	padding: 10px;
+}
+#input{
+	font-family: Cambria;
+	font-size: 19px;
+	padding: 7px;
+	border-radius: 10px 0px 0px 10px;
+}
+#input:focus{
+	outline: none;
+	border: none;
+	border-bottom: solid;
+	border-color: black;
+	box-shadow: 5px 5px 10px black;
+}
+#btn{
+	margin-left: 0px;
+	border-radius: 0px 10px 10px 0px;
+}
+.qns{
+	padding: 7px;
+	font-family: Cambria Math;
+	font-size: 19px;
+	background: white;
+	border-radius: 10px;
+	width: auto;
+	color: black;
+	float: left;
+}
+.as{
+	width: 100%;
+	float: left;
+}
+@keyframes show_q{
+	0%{
+		opacity: 0%;
+		color: white;
+	}
+	50%{
+		opacity: 100%;
+		color: white;
+	}
+	100%{
+		opacity: 100%;
+		color: black;
+	}
+}

@@ -1,0 +1,63 @@
+body{
+	height: 100vh;
+	background: linear-gradient(to bottom right, #000b78, #1227ff);
+}
+.tt{
+	padding: 7px;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-family: Bahnschrift;
+}
+#dv{
+	width: 300px;
+	border-radius: 10px;
+	background: white;
+	margin: 10px;
+	padding: 10px;
+}
+#dv:hover{
+	box-shadow: 5px 5px 5px black;
+}
+.inpt{
+	font-size: 20px;
+	font-family: Bahnschrift;
+}
+#lb{
+	background: #1227ff;
+	color: white;
+	padding: 7px;
+	font-size: 19px;
+	border-radius: 10px;
+}
+#lb:hover{
+	border-color: #1227ff;
+	border: solid;
+	color: #1227ff;
+	background: white;
+}
+#btn{
+	background: white;
+	color: #1227ff;
+	border-radius: 20px;
+	padding: 7px;
+	margin: 10px;
+	font-size: 18px;
+	font-family: Cambria;
+}
+@keyframes trn{
+	from{
+		transform: rotateY(90deg);
+	}
+	to{
+		transform: rotateY(0deg);
+	}
+}
+@keyframes show {
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 100%;
+	}
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="shortcut icon" href="static/lap.png">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/dashboard.css">
+</head>
+<body>
+	<p class="tt">Dashboard</p>
+<center>
+	<form method="POST" action="/sub" enctype="multipart/form-data">
+	<div id="dv">
+		<p class="inpt kj">Drag & Drop here</p>
+		<p class="inpt kj">or</p>
+		<label id="lb" class="kj">
+			Select file(s)
+			<input type="file" name="files" style="display: none;" multiple>
+		</label>
+	</div>
+	<button class="ot-g" id="btn">Get summary</button>
+	<a class="ot-g" href="/" style="color:white;text-decoration: none;font-size: 20px;font-family: Cambria;">Log out</a>
+	</form>
+</center>
+<script src="static/dashboard-animator.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Result</title>
+	<link rel="shortcut icon" href="static/lap.png">
+	<link rel="stylesheet" type="text/css" href="static/result.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<p>
+	<button class="lb" onclick="window.history.back()">Back</button>
+	<a href="/"><button class="lb">Log out</button></a>
+</p>
+<p id="data">{{data}}
+</p>
+<div id="ans">
+</div>
+<p style="float: left;width: 92%;"><input type="text" placeholder="Enter your query" id="input"><button onclick="p()" class="lb" id="btn">Ask</button></p>
+<script type="text/javascript" src="static/result.js"></script>
+</body>
+</html>
