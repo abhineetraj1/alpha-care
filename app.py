@@ -4,15 +4,11 @@ import os, shutil, datetime
 from PyPDF2 import PdfReader
 import requests
 
-YOUR_BARD_API_HERE="" # Add your bard api
+YOUR_Gemini_API_HERE="" # Add your Gemini api
 
 def generate_gemini_content(prompt):
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDt3z1rGvxjWYSB-6ontun8Usplgw3wXqU"
-    data = {"contents": [{"parts": [{"text": prompt}]}]}
-    headers = {"Content-Type": "application/json"}
-    response = requests.post(url.format(api_key=YOUR_BARD_API_HERE), json=data, headers=headers)
-    response.raise_for_status()  # Raise an exception for error responses
-    return response.json()["candidates"][0]["content"]["parts"][0]["text"].replace("*","")
+	#use your own API key
+	return str(requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + YOUR_Gemini_API_HERE, headers={"Content-Type": "application/json"}, json={"contents": [{"parts": [{"text": prompt}]}]}).json()["candidates"][0]["content"]["parts"][0]["text"]).replace("*","")
 
 def rndm():
 	return str(datetime.datetime.now()).replace(" ","").replace(".","").replace("-","").replace(":","")
